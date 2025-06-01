@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+    // Constantes com os valores de movimento de cada peça
+    const int MOVIMENTO_BISPO = 5;
+    const int MOVIMENTO_TORRE = 5;
+    const int MOVIMENTO_RAINHA = 8;
+
+    // =======================
+    // Movimentação do BISPO
+    // =======================
+    // O bispo anda na diagonal superior direita
+    // Traduzido como: "Cima" + "Direita"
+    printf("Movimento do BISPO:\n");
+    for (int i = 0; i < MOVIMENTO_BISPO; i++) {
+        printf("Cima\n");
+        printf("Direita\n");
+    }
+
+    // Linha em branco para separar as saídas
+    printf("\n");
+
+    // =======================
+    // Movimentação da TORRE
+    // =======================
+    // A torre anda 5 casas para a direita
+    printf("Movimento da TORRE:\n");
+    int i = 0;
+    while (i < MOVIMENTO_TORRE) {
+        printf("Direita\n");
+        i++;
+    }
+
+    // Linha em branco para separar as saídas
+    printf("\n");
+
+    // =======================
+    // Movimentação da RAINHA
+    // =======================
+    // A rainha anda 8 casas para a esquerda
+    printf("Movimento da RAINHA:\n");
+    int j = 0;
+    do {
+        printf("Esquerda\n");
+        j++;
+    } while (j < MOVIMENTO_RAINHA);
+
+    return 0;
+}
